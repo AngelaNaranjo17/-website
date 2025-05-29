@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #E9E4D4; /* Earthy Sand Beige */
+  color: #2C4A3F; /* Deep Forest Green */
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+/* Welcome Sign */
+.welcome-sign {
+  background-color: #4A7C7B; /* Muted Teal Blue */
+  color: #E9E4D4; /* Earthy Sand Beige */
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #2C4A3F;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.logo .emoji {
+  margin-right: 0.6rem;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+.logo:hover .emoji,
+.logo:focus-within .emoji {
+  transform: scale(1.15);
+}
+
+nav {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2C4A3F;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #4A7C7B;
+  border-bottom-color: #4A7C7B;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #A8CBB7; /* Soft Sage Green */
+  padding: 7rem 2rem 7rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 65vh;
+  letter-spacing: 0.02em;
+}
+
+.hero h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  color: #4A7C7B; /* Muted Teal Blue */
+  line-height: 1.2;
+  transition: color 0.4s ease;
+  user-select: none;
+}
+.hero h1:hover,
+.hero h1:focus {
+  color: #3B665F;
+  outline: none;
+  cursor: default;
+}
+
+.hero p {
+  font-size: 1.35rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #2C4A3F;
+  font-weight: 400;
+}
+
+/* Responsive Typography and Layout */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  .welcome-sign {
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+  }
+  header {
+    padding: 1.5rem 4rem;
+  }
+  .logo {
+    font-size: 2.2rem;
+  }
+  nav a {
+    font-size: 1.15rem;
+  }
+  .hero {
+    padding: 9rem 4rem 9rem 4rem;
+  }
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .hero p {
+    font-size: 1.6rem;
+    max-width: 750px;
+  }
+}
